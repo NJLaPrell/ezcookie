@@ -1,0 +1,3 @@
+The plugin loader started off as a simple way to load jQuery plugins via JavaScript, but quickly became much more. Plugins, scripts, libraries, and even required CSS can all be loaded serially or asynchronously. Make sure the plugin loader is loaded first, then setup dependencies within each plugin as needed. Each item will only be loaded once.
+
+For full details and examples, please see the project home page at: http://code.google.com/p/pluginloader/
