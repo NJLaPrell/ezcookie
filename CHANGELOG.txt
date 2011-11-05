@@ -1,0 +1,13 @@
+0.8.01
+  - Bug Fix: Exception was thrown if an empty string was passed as the expires value in an attempt to make the cookie a session cookie.
+
+0.8
+  - Bug Fix: $.removeCookie() was triggering an exception in IE9.
+  - Updated $.removeCookie() to take options to specify domain and path.
+  - $.cookie() was deprecated in favor of $.getCookie() and $.subCookie() in favor of $.getSubCookie(). This is a function name change only. $.cookie() and $.subCookie() will be removed at a later date.
+
+0.7.01
+  - Minor code refactoring.
+
+0.7
+  - Initial public release.
