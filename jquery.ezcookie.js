@@ -73,7 +73,7 @@
     } else {
       date = options.expires;
     }
-    var expires = '; expires=' + date.toUTCString();
+    var expires = options.expires == '' ? '' : '; expires=' + date.toUTCString();
     // Write the cookie
     document.cookie = [cookieName, '=', cookieValue, expires, path, domain, secure].join('');
   }
