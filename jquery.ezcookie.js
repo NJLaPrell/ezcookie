@@ -95,8 +95,10 @@
   }
 
   $.removeCookie = function(cookie,options){
+    var options =  typeof options === 'undefined' ? {} : options;
     if($.getCookie(cookie)){
-      $.setCookie(cookie,'',{expires:-1},options);
+      options.expires = -1;
+      $.setCookie(cookie,'',options);
     }
   }
 
